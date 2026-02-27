@@ -1,111 +1,87 @@
-🧮 Calculadora em Python com Testes e Interface Gráfica
+# 🧮 Python Calculator — OOP, GUI & Unit Tests
 
-Projeto de uma Calculadora em Python com:
+Projeto de uma **Calculadora em Python** com:
 
-✅ Operações matemáticas básicas
+- ✅ Programação Orientada a Objetos (POO)
+- ✅ Testes automatizados com unittest
+- ✅ Interface gráfica com tkinter
+- ✅ Validação de entrada
+- ✅ Tratamento de erros
 
-✅ Validação de entrada
+---
 
-✅ Tratamento de erros
+## 📌 Funcionalidades
 
-✅ Testes automatizados com unittest
+A classe `Calculadora` possui os seguintes métodos:
 
-✅ Interface gráfica usando tkinter
+- `somar(a, b)`
+- `subtrair(a, b)`
+- `multiplicar(a, b)`
+- `dividir(a, b)`
 
-📌 Funcionalidades
+### ✔ Validações
 
-A classe Calculadora possui os seguintes métodos:
+- Aceita apenas números (`int` ou `float`)
+- Impede divisão por zero
+- Lança `ValueError` para entradas inválidas
 
-somar(a, b)
+---
 
-subtrair(a, b)
+## 🗂 Estrutura do Projeto
 
-multiplicar(a, b)
-
-dividir(a, b)
-
-✔ Validações implementadas
-
-Aceita apenas números (int ou float)
-
-Impede divisão por zero
-
-Lança erro para entradas inválidas
-
-🗂 Estrutura do Projeto
-📁 projeto-calculadora
+```
+python-calculator-oop-gui-tests
 │
-├── calculadora.py        # Classe principal da calculadora
-├── test_calculadora.py   # Testes automatizados
-├── interface.py          # Interface gráfica com tkinter
-└── README.md             # Documentação do projeto
-🛠 Tecnologias Utilizadas
+├── calculadora.py
+├── test_calculadora.py
+├── interface.py
+└── README.md
+```
 
-Python 3
+---
 
-unittest (testes automatizados)
+## ▶ Como Executar
 
-tkinter (interface gráfica)
+Execute o arquivo da interface:
 
-▶ Como Executar o Projeto
-1️⃣ Clonar o repositório
-git clone <seu-repositorio>
-cd projeto-calculadora
-2️⃣ Executar a Interface Gráfica
+```bash
 python interface.py
+```
 
-A calculadora abrirá em uma janela.
+Para rodar os testes automatizados:
 
-📌 Para usar:
-Digite dois números separados por espaço.
-
-Exemplo:
-
-10 5
-
-Depois clique na operação desejada (+, -, *, /).
-
-3️⃣ Executar os Testes Automatizados
+```bash
 python -m unittest test_calculadora.py
+```
 
-Se tudo estiver correto, todos os testes passarão ✅
+---
 
-🧪 Testes Implementados
+## 🧪 Testes Implementados
 
-Os testes cobrem:
+- Operações básicas  
+- Números negativos  
+- Zero  
+- Números decimais  
+- Valores grandes  
+- Entradas inválidas  
+- Divisão por zero  
 
-Operações básicas
+---
 
-Números negativos
+## 🚀 Melhorias Futuras
 
-Zero
+- Adicionar botões numéricos  
+- Melhorar layout visual  
+- Histórico de operações  
+- Novas operações (potência, raiz, etc.)  
 
-Números decimais
+---
 
-Valores grandes
+## 👨‍💻 Autor
 
-Entradas inválidas
-
-Divisão por zero
-
-🚀 Melhorias Futuras
-
-Adicionar botões numéricos na interface
-
-Melhorar layout visual
-
-Histórico de operações
-
-Suporte a mais operações (potência, raiz, etc.)
-
-👨‍💻 Autor
-
-Matheus Carvalho
+Matheus Carvalho  
 
 Projeto desenvolvido para prática de:
-
-Programação Orientada a Objetos
-
-Testes Automatizados
-
-Interface Gráfica em Python
+- Programação Orientada a Objetos  
+- Testes Automatizados  
+- Interface Gráfica em Python  
