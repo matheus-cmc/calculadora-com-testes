@@ -1,4 +1,4 @@
-🧮 Calculadora em Python com Testes e Interface Gráfica
+#🧮 Calculadora em Python com Testes e Interface Gráfica
 
 Projeto de uma Calculadora em Python com:
 
