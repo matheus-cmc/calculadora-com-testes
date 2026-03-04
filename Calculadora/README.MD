@@ -1,16 +1,34 @@
 # 🧮 Python Calculator — OOP, GUI & Unit Tests
 
-Projeto de uma **Calculadora em Python** com:
+Projeto de uma **Calculadora em Python** desenvolvida com foco em boas práticas de programação.
+
+O projeto aplica:
 
 - ✅ Programação Orientada a Objetos (POO)
-- ✅ Testes automatizados com unittest
-- ✅ Interface gráfica com tkinter
-- ✅ Validação de entrada
+- ✅ Testes automatizados com `unittest`
+- ✅ Interface gráfica com `tkinter`
+- ✅ Separação entre lógica e interface
 - ✅ Tratamento de erros
+- ✅ Suporte a números negativos e decimais
 
 ---
 
-## 📌 Funcionalidades
+## 📌 Sobre o Projeto
+
+Este projeto foi estruturado separando:
+
+- **Lógica matemática** → `calculadora.py`
+- **Interface gráfica** → `interface.py`
+- **Testes automatizados** → `test_calculadora.py`
+
+A interface apenas captura os eventos do usuário e exibe os resultados.  
+Toda a regra de negócio fica isolada na classe `Calculadora`.
+
+Isso segue o princípio de **separação de responsabilidades**, deixando o código mais organizado e testável.
+
+---
+
+## ⚙️ Funcionalidades
 
 A classe `Calculadora` possui os seguintes métodos:
 
@@ -19,11 +37,26 @@ A classe `Calculadora` possui os seguintes métodos:
 - `multiplicar(a, b)`
 - `dividir(a, b)`
 
-### ✔ Validações
+### ✔ Validações Implementadas
 
 - Aceita apenas números (`int` ou `float`)
+- Permite números negativos
+- Permite números decimais
 - Impede divisão por zero
 - Lança `ValueError` para entradas inválidas
+
+---
+
+## 🖥 Interface Gráfica
+
+A interface foi construída utilizando `tkinter` e possui:
+
+- Display centralizado
+- Botões organizados em grid responsivo
+- Operações básicas (+, -, ×, ÷)
+- Suporte a números negativos
+- Feedback visual ao calcular (efeito de destaque)
+- Botão de limpar (C)
 
 ---
 
@@ -32,9 +65,9 @@ A classe `Calculadora` possui os seguintes métodos:
 ```
 python-calculator-oop-gui-tests
 │
-├── calculadora.py
-├── test_calculadora.py
-├── interface.py
+├── calculadora.py          # Lógica das operações matemáticas
+├── interface.py            # Interface gráfica com tkinter
+├── test_calculadora.py     # Testes automatizados
 └── README.md
 ```
 
@@ -42,46 +75,68 @@ python-calculator-oop-gui-tests
 
 ## ▶ Como Executar
 
-Execute o arquivo da interface:
+### 🔹 1️⃣ Executar a Interface Gráfica
+
+No terminal, dentro da pasta do projeto, execute:
 
 ```bash
 python interface.py
 ```
 
-Para rodar os testes automatizados:
+A janela da calculadora será aberta.
+
+---
+
+### 🔹 2️⃣ Executar os Testes Automatizados
+
+Para rodar os testes:
 
 ```bash
 python -m unittest test_calculadora.py
 ```
 
+Se todos os testes estiverem corretos, o terminal exibirá:
+
+```
+OK
+```
+
+Caso haja erro, o `unittest` mostrará qual teste falhou.
+
 ---
 
 ## 🧪 Testes Implementados
 
-- Operações básicas  
-- Números negativos  
-- Zero  
-- Números decimais  
-- Valores grandes  
-- Entradas inválidas  
-- Divisão por zero  
+Os testes cobrem:
+
+- Operações básicas
+- Números negativos
+- Zero
+- Números decimais
+- Valores grandes
+- Entradas inválidas
+- Divisão por zero
 
 ---
 
 ## 🚀 Melhorias Futuras
 
-- Adicionar botões numéricos  
-- Melhorar layout visual  
-- Histórico de operações  
-- Novas operações (potência, raiz, etc.)  
+- Histórico de operações
+- Botão +/- dedicado
+- Operações avançadas (potência, raiz quadrada)
+- Melhorias visuais no layout
+- Versão web utilizando Flask ou React
+- Empacotamento como executável
 
 ---
 
 ## 👨‍💻 Autor
 
-Matheus Carvalho  
+**Matheus Carvalho**
 
 Projeto desenvolvido para prática de:
-- Programação Orientada a Objetos  
-- Testes Automatizados  
-- Interface Gráfica em Python  
+
+- Programação Orientada a Objetos
+- Testes Automatizados
+- Separação de responsabilidades
+- Desenvolvimento de aplicações desktop com Python
