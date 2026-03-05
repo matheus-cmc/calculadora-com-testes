@@ -80,7 +80,7 @@ python-calculator-oop-gui-tests
 No terminal, dentro da pasta do projeto, execute:
 
 ```bash
-python interface.py
+ python -m Calculadora.interface
 ```
 
 A janela da calculadora será aberta.
@@ -92,7 +92,7 @@ A janela da calculadora será aberta.
 Para rodar os testes:
 
 ```bash
-python -m unittest test_calculadora.py
+python -m unittest discover
 ```
 
 Se todos os testes estiverem corretos, o terminal exibirá:
