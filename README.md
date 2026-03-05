@@ -94,6 +94,20 @@ Para rodar os testes:
 ```bash
 python -m unittest discover
 ```
+### 🔹 3️⃣ Executar o Teste Individual
+
+Para rodar o teste:
+
+```bash
+python -m unittest <pasta_do_teste>.<nome_do_arquivo>.<NomeDaClasse>.<nome_do_metodo>
+```
+obs: precisa colocar o nome do arquivo que deseja testar individualmente. O test_soma foi usado como exemplo.
+
+exemplo:
+
+```bash
+python -m unittest testes.test_soma
+```
 
 Se todos os testes estiverem corretos, o terminal exibirá:
 
