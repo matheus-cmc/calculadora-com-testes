@@ -21,3 +21,11 @@ class Calculadora:
         if b == 0:
             raise ValueError("Divisão por zero não é permitida")
         return a / b
+
+def calcular_expressao(self, expressao):
+    try:
+        return eval(expressao)
+    except ZeroDivisionError:
+        raise ValueError("Divisão por zero não é permitida")
+    except:
+        raise ValueError("Expressão inválida")
